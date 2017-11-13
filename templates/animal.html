@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IUCN API</title>
+	<style type="text/css">
+		h4::first-letter {
+		  text-transform: uppercase;
+		}
+		p::first-letter {
+		  text-transform: uppercase;
+		}
+	</style>
+</head>
+<body>
+	<h2><center>Random Species from the US</center></h2>
+	<h3> {{common}} : {{spename}} </h3>
+		{% for each in info %}
+
+			<h4> {{each}} </h4> <p> {{info[each]|safe }}</p>
+
+		{% endfor %}
+
+</body>
+</html>
